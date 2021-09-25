@@ -24,6 +24,6 @@ proxies = None
 product: str = 'Air force 1 Off white'
 maxPrice: int = 200
 status: str = '6,1'
-webhook: str = 'https://discord.com/api/webhooks/850556437678784523/I2j8Lo25tiuQUcPbeX6J7IfJ2eV3YiGQrrVRjN0gaIgWdDn3PuXKCrcVY7PshyC9aVaz'
+webhook: str = 'https://discord.com/api/webhooks/...'
 
 Tool(product, maxPrice, webhook, proxies)
