@@ -22,10 +22,11 @@ except Exception as e:
 
 class Tool():
 
-    def __init__(self, product: str, maxPrice: int, webhook: str, proxies):
+    def __init__(self, product: str, maxPrice: int, webhook: str, proxies, status: str):
         self.product = product
         self.maxPrice = maxPrice
         self.webhook = webhook
+        self.status = status
         self.client, self.ua = Client().client
         if proxies != None:
             self.client.proxies.update(Proxy(proxies).proxy)
@@ -95,7 +96,7 @@ class Tool():
                         'brand_ids': '',
                         'size_ids': '',
                         'material_ids': '',
-                        'status_ids': '',
+                        'status_ids': self.status,
                         'is_for_swap': '0',
                         'page': '1',
                         'per_page': '99999'

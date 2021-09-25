@@ -26,4 +26,4 @@ maxPrice: int = 200
 status: str = '6,1'
 webhook: str = 'https://discord.com/api/webhooks/...'
 
-Tool(product, maxPrice, webhook, proxies)
+Tool(product, maxPrice, webhook, proxies, status)
