@@ -1,5 +1,7 @@
 from helper.tool import Tool
-
+import os
+import platform
+os.system('cls' if platform.system() == 'Windows' else 'clear')
 '''
 Product, ex: Jordan 1, Nike, Adidas, etc.
 Maximum price, ex: 180 (for 180€)
@@ -24,6 +26,6 @@ proxies = None
 product: str = 'Air force 1 Off white'
 maxPrice: int = 200
 status: str = '6,1'
-webhook: str = 'https://discord.com/api/webhooks/...'
+webhook: str = 'https://discord.com/api/webhooks/764277183358173274/ouHqlYnyU2MqzWehNDokztbdbw8u2QxIQ7GWUSdF6RnGxQx48lg9DLyTxUCzvRPUR81n'
 
 Tool(product, maxPrice, webhook, proxies, status)
